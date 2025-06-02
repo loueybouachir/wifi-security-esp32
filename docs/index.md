@@ -1,4 +1,3 @@
-<details> <summary>📘 Click to Expand Full Markdown Content</summary>
 # 📘 Project Documentation: WiFi Security Analyzer & Attack Simulator (ESP32)
 
 ## 1. Introduction
@@ -146,4 +145,3 @@ Everything is available on GitHub, including:
 
 This tool is developed for **educational and academic research only**.  
 It must **not** be used in public or unauthorized networks. The authors bear **no responsibility** for any misuse.
-</details>
