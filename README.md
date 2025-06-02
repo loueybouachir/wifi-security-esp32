@@ -78,12 +78,12 @@ idf.py -p COMx flash
 ## 🗂️ Project Structure
 
 wifi-security-esp32/
-├── wifi-analyzer/          # Source code for WiFi scanning & analysis
-├── attack-simulator/       # Code for educational attack simulation
-├── docs/                   # Technical documentation and diagrams
-├── LICENSE                 # License file (MIT)
-├── README.md               # This file
-└── .gitignore              # Git exclusions
+├── wifi-analyzer/          # Source code for WiFi scanning & analysis \n
+├── attack-simulator/       # Code for educational attack simulation \n
+├── docs/                   # Technical documentation and diagrams \n
+├── LICENSE                 # License file (MIT) \n
+├── README.md               # This file \n
+└── .gitignore              # Git exclusions \n
 
 ## 📂 Module Documentation
 For detailed setup, features, and usage instructions of each component, please refer to the dedicated README files located in their respective directories:
