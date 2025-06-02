@@ -89,11 +89,11 @@ wifi-security-esp32/
 ## 📂 Module Documentation
 For detailed setup, features, and usage instructions of each component, please refer to the dedicated README files located in their respective directories:
 
-wifi-analyzer/README.md: Full documentation for the WiFi scanning and analysis module.
+- wifi-analyzer/README.md: Full documentation for the WiFi scanning and analysis module.
 
-attack-simulator/README.md: Details of the attack simulation scenarios and usage instructions.
+- attack-simulator/README.md: Details of the attack simulation scenarios and usage instructions.
 
-Each README includes hardware requirements, build steps, configuration tips, and usage disclaimers.
+- Each README includes hardware requirements, build steps, configuration tips, and usage disclaimers.
 
 ⚠️ This software is intended strictly for educational and academic research purposes.
 All attack simulation functionalities must only be used in isolated test environments such as university labs or virtualized WiFi sandboxes.
@@ -102,10 +102,10 @@ The authors and contributors are not liable for any misuse of the project.
 
 ## 🧑‍💻 Authors & Contributors
 
-Name: Louey Bouachir
-Email: louey.bouachir@gmail.com
-University: Sciences Faculty of Bizerte, Tunisia
-Supervisor : Dr. Litayem Nabil
+- Name: Louey Bouachir
+- Email: louey.bouachir@gmail.com
+- University: Sciences Faculty of Bizerte, Tunisia
+- Supervisor : Dr. Litayem Nabil
 
 ## 📜 License
 This project is licensed under the MIT License.
