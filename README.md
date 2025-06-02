@@ -4,7 +4,7 @@ This open-source project was developed as part of a Final Year Project (FYP) in 
 It includes two embedded systems modules designed to evaluate the security of wireless networks and demonstrate common attack scenarios in controlled, educational settings using ESP32 boards.
 
 ---
-## ⓘ For Full Project Documentation [clic here](docs/index.me)
+## ⓘ For Full Project Documentation [clic here](docs/index.md)
 
 ## 📦 Project Overview
 
