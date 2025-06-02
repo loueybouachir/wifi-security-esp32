@@ -1,0 +1,16 @@
+Channel,RSSI,Type,SourceMAC,DestinationMAC,SSID,Length
+1,-60,Beacon,34:60:f9:3f:d6:c0,,Sunday,254
+1,-42,Beacon,36:4e:56:17:4f:3d,,DIRECT-H9-SWTV-22AE,315
+1,-55,Data,34:60:f9:3f:d6:c0,,,106
+1,-55,Data,34:60:f9:3f:d6:c0,,,94
+1,-56,Data,34:60:f9:3f:d6:c0,,,106
+1,-56,Data,34:60:f9:3f:d6:c0,,,94
+1,-56,Data,34:60:f9:3f:d6:c0,,,121
+1,-37,Data,34:60:f9:3f:d6:c0,,,252
+1,-37,Data,34:60:f9:3f:d6:c0,,,193
+1,-37,Data,34:60:f9:3f:d6:c0,,,620
+1,-84,Beacon,e8:48:b8:9b:ee:11,,,186
+1,-59,Beacon,34:60:f9:3f:d6:c0,,Sunday,254
+1,-56,Data,34:60:f9:3f:d6:c0,,,94
+1,-56,Data,34:60:f9:3f:d6:c0,,,132
+1,-45,Beacon,36:4e:56:17:4f:3d,,DIRECT-H9-SWTV-22AE,315

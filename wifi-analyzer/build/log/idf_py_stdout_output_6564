@@ -1,0 +1,82 @@
+[1/5] cmd.exe /C "cd /D C:\Users\HP\workspace\AuditWiFi\build\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app C:/Users/HP/workspace/AuditWiFi/build/partition_table/partition-table.bin C:/Users/HP/workspace/AuditWiFi/build/AuditWiFi.bin"
+AuditWiFi.bin binary size 0xfe0e0 bytes. Smallest app partition is 0x200000 bytes. 0x101f20 bytes (50%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D C:\Users\HP\workspace\AuditWiFi\build\bootloader\esp-idf\esptool_py && C:\Espressif\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 C:/Users/HP/workspace/AuditWiFi/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6850 bytes. 0x7b0 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D C:\Espressif\frameworks\esp-idf-v5.2\components\esptool_py esptool.py --chip esp32 -p COM3 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 AuditWiFi.bin 0x8000 partition_table/partition-table.bin 0xd000 ota_data_initial.bin
+esptool.py v4.7.0
+Serial port COM3
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: c8:2e:18:f7:5c:d8
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0010efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000d000 to 0x0000efff...
+Compressed 26704 bytes to 16355...
+Writing at 0x00001000... (100 %)
+Wrote 26704 bytes (16355 compressed) at 0x00001000 in 0.5 seconds (effective 400.1 kbit/s)...
+Hash of data verified.
+Compressed 1040608 bytes to 639302...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001c3d9... (5 %)
+Writing at 0x00029b89... (7 %)
+Writing at 0x000311fc... (10 %)
+Writing at 0x000362fd... (12 %)
+Writing at 0x00041130... (15 %)
+Writing at 0x00046b48... (17 %)
+Writing at 0x0004c8be... (20 %)
+Writing at 0x0005264d... (22 %)
+Writing at 0x000585a3... (25 %)
+Writing at 0x0005e080... (27 %)
+Writing at 0x00063f31... (30 %)
+Writing at 0x00069b98... (32 %)
+Writing at 0x0006ee97... (35 %)
+Writing at 0x00074284... (37 %)
+Writing at 0x000797a5... (40 %)
+Writing at 0x0007eb0e... (42 %)
+Writing at 0x00084268... (45 %)
+Writing at 0x00089a76... (47 %)
+Writing at 0x0008faa0... (50 %)
+Writing at 0x00095460... (52 %)
+Writing at 0x0009afa2... (55 %)
+Writing at 0x000a0abb... (57 %)
+Writing at 0x000a6877... (60 %)
+Writing at 0x000ac149... (62 %)
+Writing at 0x000b1d7a... (65 %)
+Writing at 0x000b84e9... (67 %)
+Writing at 0x000bdf26... (70 %)
+Writing at 0x000c472f... (72 %)
+Writing at 0x000ca1e8... (75 %)
+Writing at 0x000cfcfb... (77 %)
+Writing at 0x000d594d... (80 %)
+Writing at 0x000df1c3... (82 %)
+Writing at 0x000e8ea9... (85 %)
+Writing at 0x000ef2f2... (87 %)
+Writing at 0x000f7006... (90 %)
+Writing at 0x000fcafc... (92 %)
+Writing at 0x001025f9... (95 %)
+Writing at 0x00108713... (97 %)
+Writing at 0x0010df39... (100 %)
+Wrote 1040608 bytes (639302 compressed) at 0x00010000 in 14.4 seconds (effective 579.4 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 136...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (136 compressed) at 0x00008000 in 0.0 seconds (effective 1092.0 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000d000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000d000 in 0.0 seconds (effective 2284.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+&& C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/Espressif/frameworks/esp-idf-v5.2 -D SERIAL_TOOL=C:/Espressif/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/Espressif/frameworks/esp-idf-v5.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=C:/Users/HP/workspace/AuditWiFi/build -P C:/Espressif/frameworks/esp-idf-v5.2/components/esptool_py/run_serial_tool.cmake"
