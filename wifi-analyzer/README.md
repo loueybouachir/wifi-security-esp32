@@ -4,7 +4,7 @@ This module is part of the **WiFi Security Analyzer & Attack Simulator** project
 It is responsible for scanning nearby WiFi networks, analyzing their security configurations, and detecting vulnerabilities in real time using the ESP32 platform.
 
 ---
-## ⓘ For Full Project Documentation [clic here](../docs/index.me)
+## ⓘ For Full Project Documentation [clic here](../docs/index.md)
 
 ## 🎯 Features
 
