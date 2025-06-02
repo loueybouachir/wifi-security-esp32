@@ -16,8 +16,8 @@
 #include <stdbool.h>
 #include "networks_status.h"
 
-#define BOT_TOKEN       "7571401562:AAEZQXAJuXscRPtS-Q1ytoBvikIDcRRySq0"
-#define CHAT_ID         "6533780593"
+#define BOT_TOKEN       "your-bot-token"
+#define CHAT_ID         "chat-id"
 #define CSV_FILE_PATH   "/spiffs/comparative_report.csv"
 
 static const char *TAG = "TelegramSender";

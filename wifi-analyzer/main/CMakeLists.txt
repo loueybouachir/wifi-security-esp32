@@ -6,7 +6,7 @@ idf_component_register(
     "utils.c" "wifi_init.c" "packet_capture.c" "http_server.c" 
     "results_analyzer.c" "whatsapp_sender.c" "networks_status.c" 
     "buzzer.c" "telegram_sender.c" "led_manager.c" "screen_printer.c" 
-    "i2c-lcd.c"  "app_status.c" "wifi_connect.c" "csv_firebase_uploader.c"   # list the source files of this component
+    "i2c-lcd.c"  "app_status.c" "wifi_connect.c"  # list the source files of this component
     INCLUDE_DIRS        # optional, add here public include directories
     PRIV_INCLUDE_DIRS   # optional, add here private include directories
     REQUIRES driver           # optional, list the public requirements (component names)

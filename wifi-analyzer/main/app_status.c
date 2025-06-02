@@ -121,7 +121,7 @@ void task_ap_connector(void *param){
 			            .netmask =  { .addr = ESP_IP4TOADDR(255,255,255,0) }
 			        };
 
-			        if (wifi_connect_static("zargaa", "1234567888", ip_info) == ESP_OK) {
+			        if (wifi_connect_static("your-SSID", "your-PASSWORD", ip_info) == ESP_OK) { // Set your local network SSID and PASSWORD
 			            ESP_LOGI(TAG, "Connected with static IP");
 			        } else {
 			            ESP_LOGE(TAG, "Failed static IP connect");

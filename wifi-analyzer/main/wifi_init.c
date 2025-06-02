@@ -87,8 +87,8 @@ static esp_netif_t *sta_netif = NULL;
 void wifi_connect_to_ap() {
     wifi_config_t sta_config = {
         .sta = {
-            .ssid = "Louey's Laptop",
-            .password = "123456789",
+            .ssid = "your-ssid", // Set your local network SSID 
+            .password = "your-password", // Set your local network PASSWORD 
             .scan_method = WIFI_FAST_SCAN,
             .failure_retry_cnt = 3,
             .threshold.authmode = WIFI_AUTH_WPA2_PSK

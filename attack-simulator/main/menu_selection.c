@@ -22,7 +22,6 @@ int select_attack_menu(void) {
     ESP_LOGI(TAG, "=== Attack Selection Menu ===");
 
     while (1) {
-        // Reset watchdog to prevent timeout
         esp_task_wdt_reset();
 
         // Display menu
@@ -35,7 +34,6 @@ int select_attack_menu(void) {
         printf("6. Stop and exit\n");
         printf("Enter command (1-6): ");
 
-        // Non-blocking input reading
         int input_ready = 0;
         int chars_read = 0;
         memset(input_buffer, 0, sizeof(input_buffer));
@@ -45,28 +43,27 @@ int select_attack_menu(void) {
             if (ch != EOF && ch != 0xFF) {
                 if (ch == '\n' || ch == '\r') {
                     input_ready = 1;
-                    putchar('\n'); // Echo newline
+                    putchar('\n'); 
                 } else if (chars_read < sizeof(input_buffer) - 1) {
                     input_buffer[chars_read++] = (char)ch;
-                    putchar(ch); // Echo character
+                    putchar(ch); 
                 }
             }
 
-            // Prevent watchdog timeout
             if (xTaskGetTickCount() - last_yield_time > pdMS_TO_TICKS(500)) {
                 esp_task_wdt_reset();
                 last_yield_time = xTaskGetTickCount();
-                vTaskDelay(1); // Yield CPU to other tasks
+                vTaskDelay(1); 
             }
 
             vTaskDelay(10 / portTICK_PERIOD_MS);
         }
 
         if (chars_read == 0) {
-            continue; // No input, loop again
+            continue; 
         }
 
-        input_buffer[chars_read] = '\0'; // Null-terminate input
+        input_buffer[chars_read] = '\0'; 
 
         // Parse command
         memset(cmd, 0, sizeof(cmd));

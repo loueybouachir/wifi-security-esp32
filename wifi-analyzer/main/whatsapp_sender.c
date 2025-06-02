@@ -16,10 +16,12 @@
 #include <stdbool.h>
 #include "networks_status.h"
 
-#define PHONE_NUMBER    "+21658596697"
-#define API_KEY         "4377416"
-#define BOT_TOKEN       "7571401562:AAEZQXAJuXscRPtS-Q1ytoBvikIDcRRySq0"
-#define CHAT_ID         "6533780593"
+// Fill these fields with your BOT data
+
+#define PHONE_NUMBER    "You-phone-number"
+#define API_KEY         "your-api-key"
+#define BOT_TOKEN       "your-bot-token"
+#define CHAT_ID         "your-chat-id"
 #define CSV_FILE_PATH   "/spiffs/comparative_report.csv"
 
 static const char *TAG = "WhatsAppSender";

@@ -22,7 +22,6 @@
 #include "app_status.h"
 #include "wifi_connect.h"
 #include "whatsapp_sender.h"
-#include "csv_firebase_uploader.h"
 
 TaskHandle_t core0_task_handle = NULL;
 

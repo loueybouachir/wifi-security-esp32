@@ -15,17 +15,17 @@
 #define TAG "EvilTwin"
 
 void start_fake_ap() {
-    const char *target_ssid = "Louey's Laptop";
+    const char *target_ssid = "your-SSID-target"; // Set the SSID target
 
     // Configure AP settings
     wifi_config_t ap_config = {
         .ap = {
-            .ssid = "", // SSID will be set via strcpy
+            .ssid = "", 
             .ssid_len = 0,
             .channel = 1,
             .password = "password",
             .max_connection = 4,
-            .authmode = WIFI_AUTH_WPA2_PSK // Open authentication
+            .authmode = WIFI_AUTH_WPA2_PSK 
         },
     };
 
