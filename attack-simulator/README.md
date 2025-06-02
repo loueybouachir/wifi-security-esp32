@@ -4,7 +4,7 @@ This module is part of the **WiFi Security Analyzer & Attack Simulator** project
 It simulates real-world WiFi attack scenarios in **safe, isolated environments** for educational and research purposes. This tool is intended to help students and researchers better understand wireless vulnerabilities and security risks.
 
 ---
-## ⓘ For Full Project Documentation  [clic here](doc/index.me)
+## ⓘ For Full Project Documentation  [clic here](./doc/index.me)
 
 ## 🎯 Features
 
